@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { useDispatch } from 'react-redux';
 import { registerreq } from '../redux/actions/authactions';
 
-import {useNavigation} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 function Register() {
   var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const birthYears = [1984, 1987, 1990, 1993, 1996, 1999, 2002, 2005, 2008, 2011, 2014, 2017];
@@ -11,7 +11,7 @@ function Register() {
   const [email,setemail] = useState('')
   const [password,setpassword] = useState('')
   const dispatch = useDispatch()
-  const navigate = useNavigation
+  const navigate = useNavigate()
   return (
     <div className="flex-1 bg-[url('https://theme.zdassets.com/theme_assets/678183/b7e9dce75f9edb23504e13b4699e208f204e5015.png')] bg-cover flex justify-center items-center text-white">
         <div  className='container bg-[#36393F] md:max-w-xl flex-row flex flex-1 m-3 rounded'>
