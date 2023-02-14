@@ -62,7 +62,7 @@ function Register() {
                     dispatch(registerreq(username,email,password))
                 }}  >Register</button>
                 <div className='text-[#B9BBBE]'>
-                  Already have an account?<button onClick={()=>navigate('/login')} className='text-blue-500 mb-5 font-bold text-start pl-2'>Login</button>
+                  Already have an account?<button onClick={()=>{navigate('/login')}} className='text-blue-500 mb-5 font-bold text-start pl-2'>Login</button>
                 </div>
                 
             </form>
