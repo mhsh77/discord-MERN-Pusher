@@ -23,7 +23,7 @@ function ChatMasseges() {
     if(id){dispatch(getchats(id))
      var channel = pusher.subscribe('message');
   channel.bind('newmessage', function(data) {
-
+    alert('newmessage')
     dispatch(getchats(id))
 
   }); 

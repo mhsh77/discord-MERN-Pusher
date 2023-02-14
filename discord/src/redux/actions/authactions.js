@@ -7,8 +7,9 @@ export const loginreq =(email,password)=> async (dispatch) => {
     
 
     const {data} = await axios.post('/api/login',{email,password})
-    
+    console.log(data);
     if(data.success){
+        console.log(data.success);
         dispatch(login(data.user))
         
         

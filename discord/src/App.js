@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={user?(<Home/>):(<Login/>)} />
             <Route path="/register" element={user?(<Home/>):(<Register/>)} />
-            <Route path="/login" element={<Login/>} />
+            <Route path="/login" element={user?(<Home/>):(<Login/>)} />
             
           </Routes>
         </BrowserRouter>
