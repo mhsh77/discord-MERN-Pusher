@@ -24,3 +24,8 @@ npm test
 cd discord
 npm start
 ```
+## preview video
+
+
+https://user-images.githubusercontent.com/52815971/218673985-b9dadd7f-39a7-4590-970f-e1c9110b6592.mp4
+
